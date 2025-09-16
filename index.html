@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible & SEO-friendly Sample Page — [Your Site Name]</title>
+  <meta name="description" content="A concise sample HTML5 page demonstrating semantic structure, accessibility best practices, and beginner-friendly SEO techniques.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pat.com/">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph basics -->
+  <meta property="og:title" content="Accessible & SEO-friendly Sample Page — [Your Site Name]">
+  <meta property="og:description" content="A small sample page showing semantic HTML5, accessibility and on-page SEO basics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pat.com/">
+
+ 
+</head>
+
+<body>
+  <!-- "Skip to main content" link helps keyboard and screen-reader users jump past navigation. -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div role="banner">
+      <!-- H1: one per page -->
+      <h1>Accessible & SEO-friendly Sample Page</h1>
+      <p>Example page built with semantic HTML5, accessible markup, and beginner SEO best practices.</p>
+
+      <!-- Primary navigation -->
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about" aria-current="page">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content area with an id that the skip-link targets -->
+  <main id="main-content" role="main">
+
+    <!-- Article -->
+    <article aria-labelledby="about-heading">
+      <header>
+        <h2 id="about-heading">About This Page</h2>
+      </header>
+      <p>This page is a small demonstration of how to structure a simple HTML5 document so it is readable by people, accessible to assistive technologies, and clear to search engines.</p>
+    </article>
+
+    <!-- Section: group related content together -->
+    <section aria-labelledby="services-heading" id="services">
+      <h2 id="services-heading">What You'll Learn</h2>
+      <p>Short, scannable summaries help users and search engines quickly understand your content.</p>
+
+      <ul>
+        <li>
+          <h3>Semantic HTML</h3>
+          <p>Use header, nav, main, article, section, aside, and footer to show the document structure.</p>
+        </li>
+        <li>
+          <h3>Accessibility</h3>
+          <p>Use landmarks, labels, skip links, and proper heading order so assistive tech can navigate easily.</p>
+        </li>
+        <li>
+          <h3>Basic SEO</h3>
+          <p>Meaningful titles, descriptive meta descriptions, and clear headings improve indexability.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Aside: related information -->
+    <aside aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Quick Resources</h2>
+      <p>Useful tools for validating and testing accessibility and SEO.</p>
+      <ul>
+        <li><a href="https://validator.w3.org/" rel="noopener">W3C Markup Validator</a></li>
+        <li><a href="https://developer.chrome.com/docs/lighthouse/overview/" rel="noopener">Lighthouse (Chrome DevTools)</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contact section with an accessible form -->
+    <section aria-labelledby="contact-heading" id="contact">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Example contact form — labels and control ids make this accessible.</p>
+
+      <form action="/submit" method="post" aria-label="Contact form">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required aria-required="true">
+        </div>
+
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required aria-required="true">
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <address>
+      <strong>Pat Solutions</strong><br>
+      5634 Mogoditshane.<br>
+      Gaborone, Botswana<br>
+      <a href="mailto:info@pat.com">info@pat.com</a>
+    </address>
+    <p>&copy; 2025 Your Organization. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
